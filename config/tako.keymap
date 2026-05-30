@@ -17,35 +17,24 @@
 &lt { quick_tap_ms = <200>; };
 
 / {
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "homerow mods";
-            #binding-cells = <2>;
-            tapping_term_ms = <200>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &kp Q      &kp W      &kp E       &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O      &kp P
-                &kp A      &kp S      &kp D       &kp F          &kp G         &kp H            &kp J          &kp K       &kp L      &kp BKSP
-                &kp Z      &kp X      &kp C       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT    &kp ENTER
-                                                  &kp LSHFT      &kp SPACE     &mo 1            &mo 2
+                &kp Q      	&kp W      &kp E	&kp R          &kp T         		&kp Y            &kp U          &kp I       &kp O	&kp P
+                &kp A      	&kp S      &kp D	&kp F          &kp G         		&kp H            &kp J          &kp K       &kp L	&lt LCTRL BKSP
+                &kp Z		&kp X      &kp C       	&kp V          &kp B         		&kp N            &kp M          &kp COMMA   &kp DOT   	&lt 2 ENTER
+                                                	&mt LALT TAB   &mt LSHFT SPACE		&lt 1 ECS        &kp LGUI
             >;
         };
 
-        nav_layer {
+        extra_layer {
             bindings = <
-                &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
-                &trans     &trans     &trans      &trans          &trans       &trans           &kp LARW       &kp DARW    &kp UARW   &kp RARW
-                &trans     &trans     &trans      &trans          &trans       &trans           &kp HOME       &kp PG_DN   &kp PG_UP  &kp END
-                                                  &trans          &trans       &kp ESC          &kp DEL
+                &kp N1     &kp N2     &kp N3      &kp N4          &kp N5       		&kp HOME         &kp PG_DN      &kp PG_UP   &kp END    &kp DEL
+                &kp N6     &kp N7     &kp N8      &kp N9          &kp N0       		&kp LEFT         &kp DOWN       &kp UP      &kp RIGHT  &TRANS
+                &kp SEMI   &kp SQT    &kp SLASH   &kp BSLH        &kp GRAVE    		&kp EQUAL        &kp MINUS      &kp LBKT    &kp RBKT   &TRANS
+                                                  &trans          &trans       		&trans           &trans 
             >;
         };
 
