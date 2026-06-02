@@ -14,9 +14,9 @@
 #define SYM_L 4
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-//&mt { quick_tap_ms = <200>; };
+&mt { quick_tap_ms = <200>; };
 &lt { 
-	//quick_tap_ms = <200>; 
+	quick_tap_ms = <200>; 
 	flavor="hold-preferred";
 };
 
@@ -26,19 +26,19 @@
 
         default_layer {
             bindings = <
-                &kp Q      	&kp W      &kp E	&kp R          &kp T         		&kp Y            &kp U          &kp I       &kp O		&kp P
-                &kp A      	&kp S      &kp D	&kp F          &kp G         		&kp H            &kp J          &kp K       &kp L		&kp BSPC
-                &kp Z		&kp X      &kp C       	&kp V          &kp B         		&kp N            &kp M          &kp COMMA   &mt LALT DOT   	&mt LCTRL ENTER
-                                                	&mt LSHFT TAB  &kp SPACE      		&mo 1            &kp LGUI
+                &kp Q      	&kp W      &kp E	&kp R          &kp T         		&kp Y            &kp U          &kp I       &kp O	&kp P
+                &kp A      	&kp S      &kp D	&kp F          &kp G         		&kp H            &kp J          &kp K       &kp L	&kp BSPC
+                &kp Z		&kp X      &kp C       	&kp V          &kp B         		&kp N            &kp M          &kp COMMA   &kp DOT   	&lt 2 ENTER
+                                                	&mt LSHFT LALT &kp SPACE      		&lt 1 TAB        &mt LGUI LCTRL
             >;
         };
 
         extra_layer {
             bindings = <
-                &kp ESC    &kp SEMI   &kp EQUAL   &kp MINUS       &kp GRAVE    		&kp PIPE         &kp DQT        &kp SLASH   &kp COLON  &kp DEL
-                &kp N1     &kp N2     &kp N3      &kp N4          &kp N5       		&kp LEFT         &kp DOWN       &kp UP      &kp RIGHT  &trans
-                &kp N6     &kp N7     &kp N8      &kp N9          &kp N0      		&kp BSLH         &kp SQT        &kp LBKT    &kp RBKT   &trans
-                                                  &trans          &trans       		&trans           &trans 
+		&kp N1		&kp N2		&kp N3		&kp N4		&kp N5		&kp N6		&kp N7		&kp N8		&kp N9		&kp N0
+                &kp TAB		&kp SEMI	&kp EQUAL	&kp MINUS       &kp GRAVE	&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	&trans
+                &kp ESC 	&kp SQT		&kp LBKT	&kp RBKT	&kp BSLH	&trans  	&trans 		&trans   	&kp SLASH	&kp DEL
+                                                  		&trans          &trans		&trans		&trans 
             >;
         };
 
@@ -51,22 +51,5 @@
             >;
         };
 
-        num_layer {
-            bindings = <
-                &kp LBKT   &kp N7     &kp N8      &kp N9          &kp RBKT      &trans          &trans         &trans      &trans     &trans
-                &kp SEMI   &kp N4     &kp N5      &kp N6          &kp EQUAL     &trans          &trans         &trans      &trans     &trans
-                &kp GRAVE  &kp N1     &kp N2      &kp N3          &kp BSLH      &trans          &trans         &trans      &trans     &trans
-                                                  &kp N0          &kp MINUS     &trans          &trans
-            >;
-        };
-
-        sym_layer {
-            bindings = <
-                &kp LBRC   &kp LS(N7) &kp LS(N8)  &kp LS(N9)      &kp RBRC      &trans          &trans         &trans      &trans     &trans
-                &kp COLON  &kp LS(N4) &kp LS(N5)  &kp LS(N6)      &kp PLUS      &trans          &trans         &trans      &trans     &trans
-                &kp TILDE  &kp LS(N1) &kp LS(N2)  &kp LS(N3)      &kp LS(BSLH)  &trans          &trans         &trans      &trans     &trans
-                                                  &kp LS(N0)      &kp UNDER     &trans          &trans
-            >;
-        };
     };
 };
