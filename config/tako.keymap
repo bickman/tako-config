@@ -14,9 +14,9 @@
 #define SYM_L 4
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&mt { quick_tap_ms = <200>; };
+&mt { quick_tap_ms = <400>; };
 &lt { 
-	quick_tap_ms = <200>; 
+	quick_tap_ms = <400>; 
 	flavor="hold-preferred";
 };
 
