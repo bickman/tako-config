@@ -9,9 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&mt { quick_tap_ms = <300>; };
+&mt { quick_tap_ms = <200>; };
 &lt { 
-	quick_tap_ms = <300>; 
+	quick_tap_ms = <200>; 
 	flavor="hold-preferred";
 };
 
