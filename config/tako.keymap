@@ -63,6 +63,11 @@
             key-positions = <30 31>;
             bindings = <&mo 1>;
         };
+        combo_mo2 {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&mo 3>;
+        };
     };
     
     keymap {
