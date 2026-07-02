@@ -25,27 +25,27 @@
         };
         combo_lalt {
             timeout-ms = <50>;
-            key-positions = <21 22>;
+            key-positions = <11 12>;
             bindings = <&kp LALT>;
         };
         combo_ralt {
             timeout-ms = <50>;
-            key-positions = <27 28>;
+            key-positions = <17 18>;
             bindings = <&kp RALT>;
         };
         combo_semi {
             timeout-ms = <50>;
-            key-positions = <28 29>;
+            key-positions = <18 19>;
             bindings = <&kp SEMI>;
         };
         combo_lgui {
             timeout-ms = <50>;
-            key-positions = <22 23>;
+            key-positions = <12 13>;
             bindings = <&kp LGUI>;
         };
         combo_rgui {
             timeout-ms = <50>;
-            key-positions = <26 27>;
+            key-positions = <16 17>;
             bindings = <&kp RGUI>;
         };
         combo_ctrl {
@@ -63,7 +63,7 @@
             key-positions = <30 31>;
             bindings = <&mo 1>;
         };
-        combo_mo2 {
+        combo_mo3 {
             timeout-ms = <50>;
             key-positions = <31 32>;
             bindings = <&mo 3>;
